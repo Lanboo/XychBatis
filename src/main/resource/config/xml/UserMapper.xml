@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xych.mybatis.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.xych.mybatis.pojo.User">
+        <id column="c_id" jdbcType="VARCHAR" property="id" />
+        <result column="c_user_code" jdbcType="VARCHAR" property="c_user_code" />
+        <result column="c_user_name" jdbcType="VARCHAR" property="c_user_name" />
+        <result column="c_nick_name" jdbcType="VARCHAR" property="c_nick_name" />
+        <result column="c_user_pwd" jdbcType="VARCHAR" property="c_user_pwd" />
+        <result column="c_dv_state" jdbcType="VARCHAR" property="c_dv_state" />
+        <result column="c_dv_card_type" jdbcType="VARCHAR" property="c_dv_card_type" />
+        <result column="c_card_code" jdbcType="VARCHAR" property="c_card_code" />
+        <result column="c_email" jdbcType="VARCHAR" property="c_email" />
+        <result column="c_native_place" jdbcType="VARCHAR" property="c_native_place" />
+        <result column="c_living_place" jdbcType="VARCHAR" property="c_living_place" />
+        <result column="c_create_time" jdbcType="VARCHAR" property="c_create_time" />
+        <result column="c_user_sex" jdbcType="VARCHAR" property="c_user_sex" />
+        <result column="c_res_code" jdbcType="VARCHAR" property="c_res_code" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        c_id, c_user_code, c_user_name, c_nick_name, c_user_pwd, c_dv_state, c_dv_card_type,
+        c_card_code, c_email, c_native_place, c_living_place, c_create_time, c_user_sex,
+        c_res_code
+    </sql>
+    <select id="selectOne" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from t_s_user
+        where c_id = #{id,jdbcType=VARCHAR}
+    </select>
+</mapper>
