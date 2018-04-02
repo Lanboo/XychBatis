@@ -1,3 +1,4 @@
+[toc]
 # 模拟MyBatis
 目的：更好的理解MyBatis的原理
 
