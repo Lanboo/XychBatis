@@ -3,13 +3,13 @@ package com.xych.xychbatis.v1;
 public class SqlSession
 {
     private Configuration configuration;
-    private Excutor excutor;
+    private Executor executor;
 
-    public SqlSession(Configuration configuration, Excutor excutor)
+    public SqlSession(Configuration configuration, Executor executor)
     {
         super();
         this.configuration = configuration;
-        this.excutor = excutor;
+        this.executor = executor;
     }
 
     public <T> T getMapper(Class<T> clazz)
@@ -19,6 +19,6 @@ public class SqlSession
 
     public <T> T selectOne(String sql, Object params)
     {
-        return this.excutor.selectOne(sql, params);
+        return this.executor.selectOne(sql, params);
     }
 }
