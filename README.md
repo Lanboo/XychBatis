@@ -46,11 +46,15 @@ public class XychBatisTest
 
 #### v1.0 类图
 
-![]()
+![v1类图](https://github.com/Lanboo/resource/blob/master/images/XychBatis/v1%E7%B1%BB%E5%9B%BE.png?raw=true)
 
 #### v1.0时序图
 
+![v1类图](https://github.com/Lanboo/resource/blob/master/images/XychBatis/v1%E6%97%B6%E5%BA%8F%E5%9B%BE.png?raw=true)
+
 ``` plantuml
+////(多说一句，VSCode+Markdown Preview Enhanced插件+Graphviz应用程序  可以实现用PlanUML语法画UML图)
+////代码如下，效果图如上
 @startuml
 SqlSession -> Configuration : getMapper
 Configuration -> MapperProxy : 代理出Mapper的代理类
