@@ -5,7 +5,7 @@
 ## MyBatis 编程式写法
 ##### MyBatis结构简图
 
-![MyBatis结构简图](https://github.com/Lanboo/resource/blob/master/images/XychBatis/MyBatis%E7%BB%93%E6%9E%84%E7%AE%80%E5%9B%BE.png)
+![MyBatis结构简图](https://github.com/Lanboo/resource/blob/master/images/XychBatis/MyBatis%E7%BB%93%E6%9E%84%E7%AE%80%E5%9B%BE.png?raw=true)
 
 ```java
 public class MyBatisTest
@@ -37,7 +37,7 @@ public class XychBatisTest
 {
     public static void main(String[] args)
     {
-        SqlSession sqlSession = new SqlSession(new Configuration(), new SimpleExcutor());
+        SqlSession sqlSession = new SqlSession(new Configuration(), new SimpleExecutor());
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
         User user = userMapper.selectOne("1");
         System.out.println(user);
@@ -63,8 +63,8 @@ SqlSession <-- Configuration : 返回Mapper的代理类
 [->SqlSession : Mapper接口调用自身的接口方法
 SqlSession -> MapperProxy : 进入invock方法
 MapperProxy -> SqlSession : selectOne
-SqlSession -> Excutor : selectOne
-Excutor -> 数据库 : 创建连接，执行SQL\n获取数据，封装数据并返回
+SqlSession -> Executor : selectOne
+Executor -> 数据库 : 创建连接，执行SQL\n获取数据，封装数据并返回
 SqlSession <-- 数据库 : 返回Pojo
 [<--SqlSession : 返回Pojo
 @enduml

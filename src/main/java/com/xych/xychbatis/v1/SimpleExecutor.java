@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 import com.xych.pojo.User;
 
-public class SimpleExcutor implements Executor
+public class SimpleExecutor implements Executor
 {
     private final String calssDriver = "com.mysql.cj.jdbc.Driver";
     private final String url = "jdbc:mysql://localhost:3306/Lanboo?useUnicode=true&characterEncoding=utf-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
