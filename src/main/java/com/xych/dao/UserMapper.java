@@ -1,6 +1,6 @@
-package com.xych.mybatis.dao;
+package com.xych.dao;
 
-import com.xych.mybatis.pojo.User;
+import com.xych.pojo.User;
 
 public interface UserMapper
 {

@@ -4,12 +4,12 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import com.xych.dao.UserMapper;
+import com.xych.pojo.User;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-
-import com.xych.mybatis.dao.UserMapper;
-import com.xych.mybatis.pojo.User;
 
 public class MyBatisTest
 {

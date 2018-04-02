@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xych.mybatis.dao.UserMapper">
-    <resultMap id="BaseResultMap" type="com.xych.mybatis.pojo.User">
+    <resultMap id="BaseResultMap" type="com.xych.pojo.User">
         <id column="c_id" jdbcType="VARCHAR" property="id" />
         <result column="c_user_code" jdbcType="VARCHAR" property="c_user_code" />
         <result column="c_user_name" jdbcType="VARCHAR" property="c_user_name" />

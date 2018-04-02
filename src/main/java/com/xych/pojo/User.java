@@ -1,4 +1,4 @@
-package com.xych.mybatis.pojo;
+package com.xych.pojo;
 
 public class User
 {
