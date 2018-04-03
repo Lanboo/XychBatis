@@ -71,3 +71,31 @@ SqlSession <-- 数据库 : 返回Pojo
 ```
 
 
+
+## XychBatis-version2.0
+``` java
+public class XychBatisTest
+{
+    public static SqlSession getSqlSession() throws Exception
+    {
+        InputStream configFile = new FileInputStream("D:\\File\\Code\\Java\\git\\other\\XychBatis\\src\\main\\resource\\config\\v2\\xychbatis-config.properties");
+        Properties properties = new Properties();
+        properties.load(configFile);
+        Configuration configuration = new Configuration(properties);
+        SqlSession sqlSession = new SqlSession(configuration, ExecutorFactory.DEFAULT(configuration));
+        return sqlSession;
+    }
+
+    public static void main(String[] args) throws Exception
+    {
+        SqlSession sqlSession = getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        User user = userMapper.selectOne("1");
+        System.out.println(user);
+    }
+}
+```
+
+#### v2.0 类图
+![](https://github.com/Lanboo/resource/blob/master/images/XychBatis/v2%E7%B1%BB%E5%9B%BE.png?raw=true)
+
