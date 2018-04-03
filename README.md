@@ -2,7 +2,7 @@
 # 模拟MyBatis
 目的：更好的理解MyBatis的原理
 
-## MyBatis 编程式写法
+### MyBatis 编程式写法
 ##### MyBatis结构简图
 
 ![MyBatis结构简图](https://github.com/Lanboo/resource/blob/master/images/XychBatis/MyBatis%E7%BB%93%E6%9E%84%E7%AE%80%E5%9B%BE.png?raw=true)
