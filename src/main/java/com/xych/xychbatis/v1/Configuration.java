@@ -4,7 +4,7 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.xych.pojo.User;
+import com.xych.test.pojo.User;
 
 public class Configuration
 {

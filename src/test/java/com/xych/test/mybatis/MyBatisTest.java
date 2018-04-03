@@ -4,8 +4,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import com.xych.dao.UserMapper;
-import com.xych.pojo.User;
+import com.xych.test.mybatis.mapper.UserMapper;
+import com.xych.test.pojo.User;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
