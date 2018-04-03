@@ -1,7 +1,7 @@
 package com.xych.test.xychbatis.v1;
 
-import com.xych.dao.UserMapper;
-import com.xych.pojo.User;
+import com.xych.test.mybatis.mapper.UserMapper;
+import com.xych.test.pojo.User;
 import com.xych.xychbatis.v1.Configuration;
 import com.xych.xychbatis.v1.SimpleExecutor;
 import com.xych.xychbatis.v1.SqlSession;

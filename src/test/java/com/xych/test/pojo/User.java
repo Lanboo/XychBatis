@@ -1,4 +1,4 @@
-package com.xych.pojo;
+package com.xych.test.pojo;
 
 public class User
 {

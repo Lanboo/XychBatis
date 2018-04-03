@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.xych.pojo.User;
+import com.xych.test.pojo.User;
 
 public class SimpleExecutor implements Executor
 {
