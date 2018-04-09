@@ -1,7 +1,6 @@
 package com.xych.xychbatis.v2.result;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,6 +9,7 @@ import com.xych.xychbatis.v2.config.Configuration;
 
 public class ResultSetHandler
 {
+    @SuppressWarnings("unused")
     private final Configuration configuration;
 
     public ResultSetHandler(Configuration configuration)
