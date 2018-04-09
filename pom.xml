@@ -25,6 +25,13 @@
             <version>${mybatis.version}</version>
         </dependency>
         <!-- MyBatis End -->
+        
+        <!-- MyBatis插件 PageHelper -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.1.2</version>
+        </dependency>
 
         <!-- 日志相关 -->
         <dependency>
